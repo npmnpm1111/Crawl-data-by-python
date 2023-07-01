@@ -8,10 +8,10 @@ from queue import Queue
 
 MAX_RETRIES = 5
 TIMEOUT = 10
-
+### 
 def extract_score(subject, score_string):
     score = next((s.split(':')[1].strip() for s in score_string.split(';') if subject in s), "N/A")
-    return score
+    return score 
 
 def process_score(formatted_x):
     url = "https://hxa7mnvs1a.execute-api.ap-southeast-1.amazonaws.com/go/" + formatted_x
